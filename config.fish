@@ -4,8 +4,17 @@
 # -n 行数表示, -I バイナリファイル無視, svn関係のファイルを無視
 alias grep "grep --color -n -I --exclude='*.svn-*' --exclude='entries' --exclude='*/cache/*'"
 
+alias ls='ls -a'
+alias rm='rm -i'
+alias cp='cp -i'
+alias mv='mv -i'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+alias less='less -NM'
+
 ## Git
 alias gco='git checkout'
+alias gcom='git checkout master'
 alias gcb='git checkout -b'
 ### 選択したブランチに移動
 alias gb='gco (git branch| fzy)'
